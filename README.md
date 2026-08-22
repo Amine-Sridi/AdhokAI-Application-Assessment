@@ -208,7 +208,7 @@ pytest
 - **LLM provider — Groq.** Chosen specifically because it's genuinely free (no credit
   card, no trial period to expire), fast, and its Chat Completions API is
   OpenAI-compatible with solid native tool/function-calling support
-  (`llama-3.3-70b-versatile` is used by default). The client is isolated in
+  (`qwen/qwen3.6-27b` is used by default). The client is isolated in
   `src/llm/client.py` behind a single `create_message()` method, so swapping providers
   later means writing a new class with the same method, not touching `orchestrator.py`.
 - **Weather API — Open-Meteo.** No API key is needed for geocoding or forecasts,
